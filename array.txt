@@ -1,0 +1,5 @@
+For Array problems
+  1.Check wheather it'll be an advantage to sort the array,if so do it.
+  2.Try to apply two pointers approach.(Ref : Two Sum II,Three Sum Problem on LeetCode).3
+  3.Choose between using a set or length(Set will automatically sort the array and remove all the
+duplicates).
