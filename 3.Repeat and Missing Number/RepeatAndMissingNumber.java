@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.*;
 public class RepeatAndMissingNumber{
 	static void printTwoElements(int a[], int n) { 
-        System.out.print("The repeating element is "); 
+        System.out.println("The repeating element is "); 
   
         for (int i = 0; i < n; i++) {  
             if (a[Math.abs(a[i])-1] > 0) 

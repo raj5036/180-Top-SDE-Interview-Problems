@@ -27,7 +27,7 @@ class Solution { //Best Solution
         return solve(grid,0,0);
     }
 }
-/*Optimized*/
+/*TLE in LeetCode*/ /*InterviewBit Solution*/
 class InterviewBitSolution {
 	public int uniquePaths(int a, int b) {
 	      /* If either 1 row or 1 column are there then the only way to end
