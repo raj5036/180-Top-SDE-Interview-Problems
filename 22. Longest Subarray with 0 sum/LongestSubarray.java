@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.lang.*;
 public class LongestSubarray{
-	static int longestSubarray(int arr[], int n) { 
+	static int longestSubarray(int arr[], int n) { //Brute Force
         int max_len = 0; 
         for (int i = 0; i < n; i++) { 
             int curr_sum = 0;  
@@ -14,7 +14,7 @@ public class LongestSubarray{
         } 
         return max_len; 
     } 
-    static int maxLen(int arr[]) {  
+    static int maxLen(int arr[]) {  //Time complexity : O(n)
         HashMap<Integer, Integer> hM = new HashMap<Integer, Integer>(); 
         int sum = 0; 
         int max_len = 0; 
