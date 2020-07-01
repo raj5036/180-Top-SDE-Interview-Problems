@@ -73,14 +73,12 @@ public class Sudoku {
 		for (int num = 1; num <= n; num++) { 
 			if (isSafe(board, row, col, num)) { 
 				board[row][col] = num; 
-				if (solveSudoku(board, n)) { 
+				if (solveSudoku(board, n)) 
 					// print(board, n); 
 					return true; 
-				} 
-				else { 
+				else
 					// replace it 
 					board[row][col] = 0; 
-				} 
 			} 
 		} 
 		return false; 
