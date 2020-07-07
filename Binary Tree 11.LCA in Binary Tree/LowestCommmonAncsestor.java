@@ -19,16 +19,13 @@ class Main{
 	}
 
 	// Function to check if given node is present in binary tree or not
-	public static boolean isNodePresent(Node root, Node node)
-	{
+	public static boolean isNodePresent(Node root, Node node){
 		// base case
-		if (root == null) {
+		if (root == null)
 			return false;
-		}
 		// if node is found, return true
-		if (root == node) {
+		if (root == node)
 			return true;
-		}
 		// return true if node is found in the left subtree or right subtree
 		return isNodePresent(root.left, node) || isNodePresent(root.right, node);
 	}
@@ -65,8 +62,7 @@ class Main{
 	}
 
 	// Function to find lowest common ancestor of nodes x and y
-	public static void findLCA(Node root, Node x, Node y)
-	{
+	public static void findLCA(Node root, Node x, Node y){
 		// lca stores lowest common ancestor
 		Node lca = null;
 
@@ -74,11 +70,10 @@ class Main{
 		NodeWrapper LCA = new NodeWrapper(lca);
 
 		// call LCA procedure only if both x and y are present in the tree
-		if (isNodePresent(root, y) && isNodePresent(root, x)) {
+		if (isNodePresent(root, y) && isNodePresent(root, x)){
 			findLCA(root, LCA, x, y);
 			lca = LCA.node;
 		}
-
 		// if LCA exists, print it
 		if (lca != null) {
 			System.out.println("LCA is " + lca.data);
