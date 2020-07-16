@@ -78,7 +78,7 @@ public class Sudoku {
 					return true; 
 				else
 					// replace it 
-					board[row][col] = 0; 
+					board[row][col] = 0; // BACKTRACK
 			} 
 		} 
 		return false; 
