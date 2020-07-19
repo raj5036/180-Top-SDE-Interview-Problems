@@ -1,0 +1,9 @@
+Approach: Recurse the binary tree in Inorder Format, at every stage of function call pass on the address of last node 
+in the flattened linked list so that current node can make itself a right node of the last node.
+
+
+1.For left child, it’s parent node is the last node in the flattened list
+2.For the right child there are two conditions:
+
+1.If there is no left child to the parent, parent node is the last node in the flattened list.
+2.If left child is not null then leaf node from left sub-tree is the last node in the flattened list.
