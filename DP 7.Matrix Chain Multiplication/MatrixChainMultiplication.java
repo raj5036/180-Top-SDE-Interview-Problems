@@ -61,7 +61,7 @@ public class MatrixChainMultiplication{
 		int n=dims.length;
 		System.out.println(obj.matrixChainMultiplication(dims,0,n-1));
 		int[][] T=new int[n][n];
-		System.out.println(obj.matrixChainMultiplication(dims,0,n-1,T));
+		System.out.println(obj.matrixChainMultiplication(dims,0,n-1,T)); //DP
 		for(int[] row:T)
 			System.out.println(Arrays.toString(row));
 	}

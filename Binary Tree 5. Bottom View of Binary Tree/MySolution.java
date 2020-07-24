@@ -1,7 +1,7 @@
+import java.util.*;
 class Tree
 {
- 
-    // Method that returns the bottom view.
+ // Method that returns the bottom view.
     public ArrayList <Integer> bottomView(Node root){
         ArrayList<Integer> ans=new ArrayList<>();
         if(root==null)
@@ -40,5 +40,8 @@ class Tree
             ans1.add(map.get(it.next()).data);
         ans.clear();
         return ans1;
+    }
+    public static void main(String[] args){
+
     }
 }

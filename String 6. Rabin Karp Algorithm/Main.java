@@ -43,7 +43,7 @@ public class Main
 				/* Check for characters one by one */
 				for (j = 0; j < M; j++) 
 				{ 
-					if (txt.charAt(i+j) != pat.charAt(j)) 
+					if (txt.charAt(j+i) != pat.charAt(j)) 
 						break; 
 				} 
 	
@@ -61,7 +61,7 @@ public class Main
 				// We might get negative value of t, converting it 
 				// to positive 
 				if (t < 0) 
-				t = (t + q); 
+					t = (t + q); 
 			} 
 		} 
 	} 
