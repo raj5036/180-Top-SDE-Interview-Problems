@@ -3,7 +3,7 @@
 #define MAX 1000 
 using namespace std;
 class Stack{
-	int top=0;
+	int top;
 	public:
 		int a[MAX];
 		Stack(){

@@ -47,6 +47,7 @@ public class MergeOverlappingSubintervals2 {
 										+ arr[i].end + "]"); 
 		} 
 	} 
+	
 
 	// Driver Code 
 	public static void main(String args[]) { 

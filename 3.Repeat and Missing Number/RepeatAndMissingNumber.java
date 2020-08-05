@@ -12,7 +12,7 @@ public class RepeatAndMissingNumber{
         } 
   
         System.out.print("And the missing element is "); 
-        for (int i=0;i<n;i++) { 
+        for (int i=0;i<n;i++){ 
             if (a[i]>0) 
                 System.out.println(i + 1); 
         } 
