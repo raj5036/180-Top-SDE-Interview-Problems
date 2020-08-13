@@ -5,8 +5,8 @@ using namespace std;
 
 class LRU{
 	int capacity;
-	list<int> dq;
-	unordered_map<int,list<int>::iterator> umap;
+	list<int> dq;   // store keys of cache 
+	unordered_map<int,list<int>::iterator> umap;  // store references of key in cache 
 
 public:
 	LRU(int);
@@ -18,7 +18,7 @@ LRU::LRU(int n){
 	this->capacity=n;
 }
 void LRU::refer(int x){
-	if(umap.find(x)==umap.end()){
+	if(umap.find(x)==umap.end()){  //if x is not in the cache
 		if(dq.size()==capacity){
 			int last=dq.back();
 			dq.pop_back();
@@ -29,6 +29,7 @@ void LRU::refer(int x){
 		dq.erase(umap[x]);
 	}
 
+	//update reference
 	dq.push_front(x);
 	umap[x]=dq.begin();
 }

@@ -33,7 +33,9 @@ public class LongestSubarray{
                 max_len = Math.max(max_len, i - prev_i); 
             else 
                 hM.put(sum, i); 
-        } 
+            return max_len;
+        }
+    } 
 	public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
