@@ -18,11 +18,12 @@ int LISDP(int *a,int n){
 		for(int j=0;j<i;j++)
 			if(a[j]<a[i] && L[j]>L[i])
 				L[i]=L[j];
-			L[i++];
+		L[i++];
 	}
-	int *it;
-	it=std::max_element(L,L+n-1);
-	int max=*it;
+	int max=INT_MIN;
+	for(int i=0;i<n;i++)
+		if(L[i]>max)
+			max=L[i];
 	return max;
 }
 int main(){
