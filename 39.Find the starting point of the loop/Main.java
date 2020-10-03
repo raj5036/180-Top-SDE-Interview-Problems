@@ -56,10 +56,10 @@ class LinkedList{
         return true;
 	}
 	Node detectAndRemoveLoop(Node head){ 
-    if (head == NULL || head->next == NULL) 
-        return NULL; 
-  
-    Node slow =head,fast = head; 
+	    if (head == NULL || head->next == NULL) 
+	        return NULL; 
+	  
+	    Node slow =head,fast = head; 
   
 	    // Move slow and fast 1 and 2 steps 
 	    // ahead respectively 

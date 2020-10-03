@@ -21,7 +21,7 @@ public class TrailingZeroes{
 		}while(n!=0);
 		return count;
 	}
-	static int findTrailingZeros(int n) {
+	static int findTrailingZeros(int n){
         int count = 0; 
         // Keep dividing n by powers  
         // of 5 and update count 

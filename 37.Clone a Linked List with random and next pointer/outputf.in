@@ -1,0 +1,13 @@
+Original list : 
+Data = 1, Random = 3
+Data = 2, Random = 1
+Data = 3, Random = 5
+Data = 4, Random = 5
+Data = 5, Random = 2
+
+Cloned list : 
+Data = 1, Random = 3
+Data = 2, Random = 1
+Data = 3, Random = 5
+Data = 4, Random = 5
+Data = 5, Random = 2

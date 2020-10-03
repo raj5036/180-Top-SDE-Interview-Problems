@@ -1,10 +1,10 @@
 public class Solution {
-    public void connect(TreeLinkNode root) {
+    public void connect(TreeNode root) {
         if (root == null) {
             return;
         }
         
-        Queue<TreeLinkNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         queue.add(null);
         
@@ -12,7 +12,7 @@ public class Solution {
             int size = queue.size()-1;
             
             while (size-- > 0) {
-                TreeLinkNode node = queue.remove();
+                TreeNode node = queue.remove();
                 // System.out.println(size+" " +node.val);
                 node.next = queue.peek();
                 
