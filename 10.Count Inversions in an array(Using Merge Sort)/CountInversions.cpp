@@ -38,8 +38,6 @@ int _mergeSort(int arr[], int temp[], int left, int right)
     return inv_count; 
 } 
   
-/* This funt merges two sorted arrays  
-and returns inversion count in the arrays.*/
 int merge(int arr[], int temp[], int left, 
           int mid, int right) 
 { 
@@ -64,7 +62,7 @@ int merge(int arr[], int temp[], int left,
   
     /* Copy the remaining elements of left subarray  
 (if there are any) to temp*/
-    while (i <= mid - 1) 
+    while (i <= mid-1) 
         temp[k++] = arr[i++]; 
   
     /* Copy the remaining elements of right subarray  
